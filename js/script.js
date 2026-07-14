@@ -94,19 +94,34 @@ let dapAnDungPhepTinh=0;
 
 function taoDePhepTinh(){
 
+    let a = Math.floor(Math.random() * 50) + 1;
+    let b = Math.floor(Math.random() * 50) + 1;
 
-let a=Math.floor(Math.random()*50)+1;
+    // Chọn ngẫu nhiên phép cộng hoặc phép trừ
+    let phep = Math.random() < 0.5 ? "+" : "-";
 
-let b=Math.floor(Math.random()*50)+1;
+    // Nếu là phép trừ thì đảm bảo không ra số âm
+    if(phep == "-"){
 
+        if(a < b){
+            let temp = a;
+            a = b;
+            b = temp;
+        }
 
-document.getElementById("deBaiPhepTinh").innerHTML=
+        dapAnDungPhepTinh = a - b;
 
-`${a} + ${b} =`;
+    }else{
 
+        dapAnDungPhepTinh = a + b;
 
-dapAnDungPhepTinh=a+b;
+    }
 
+    document.getElementById("deBaiPhepTinh").innerHTML =
+        `${a} ${phep} ${b} = ?`;
+
+    document.getElementById("dapAnPhepTinh").value = "";
+    document.getElementById("phanHoiPhepTinh").innerHTML = "";
 
 }
 
@@ -114,32 +129,21 @@ dapAnDungPhepTinh=a+b;
 
 function kiemTraPhepTinh(){
 
+    let nhap = parseInt(document.getElementById("dapAnPhepTinh").value);
 
-let nhap=
+    if(nhap == dapAnDungPhepTinh){
 
-parseInt(document.getElementById("dapAnPhepTinh").value);
+        document.getElementById("phanHoiPhepTinh").innerHTML =
+        "Đúng rồi! Giỏi quá bé ơi.";
 
+    }else{
 
+        document.getElementById("phanHoiPhepTinh").innerHTML =
+        " Chưa đúng! Đáp án đúng là " + dapAnDungPhepTinh;
 
-if(nhap==dapAnDungPhepTinh){
-
-document.getElementById("phanHoiPhepTinh").innerHTML=
-
-" Đúng rồi!giỏi quá bé ơi ";
-
-}
-
-else{
-
-document.getElementById("phanHoiPhepTinh").innerHTML=
-
-"Chưa đúng!thử lại đi bé";
+    }
 
 }
-
-
-}
-
 
 
 
@@ -150,4 +154,35 @@ taoDeTimX();
 
 taoDePhepTinh();
 
+}
+
+function tinhNhan(){
+
+    let a = Number(document.getElementById("nhan1").value);
+    let b = Number(document.getElementById("nhan2").value);
+
+    let kq = a * b;
+
+    document.getElementById("ketQuaNhan").innerHTML =
+        "Kết quả: " + a + " × " + b + " = " + kq;
+}
+
+
+function tinhChia(){
+
+    let a = Number(document.getElementById("chia1").value);
+    let b = Number(document.getElementById("chia2").value);
+
+    if(b==0){
+
+        document.getElementById("ketQuaChia").innerHTML =
+        " Không thể chia cho 0";
+
+        return;
+    }
+
+    let kq = a / b;
+
+    document.getElementById("ketQuaChia").innerHTML =
+        "Kết quả: " + a + " ÷ " + b + " = " + kq;
 }

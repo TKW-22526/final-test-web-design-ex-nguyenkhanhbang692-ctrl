@@ -439,3 +439,177 @@ padding:20px;
 
 
 }
+/* =====================
+   PHẦN NHÂN & CHIA
+===================== */
+
+#nhanchia{
+
+    padding:40px;
+
+}
+
+#nhanchia .card{
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px #ddd;
+
+    overflow:hidden;
+
+}
+
+#nhanchia .card-header{
+
+    background:#51cf66;
+
+    color:white;
+
+    padding:20px;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+}
+
+#nhanchia .row{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+#nhanchia .col-md-6{
+
+    width:350px;
+
+}
+
+#nhanchia .border{
+
+    background:#f8fbff;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 4px 10px #ddd;
+
+    transition:0.3s;
+
+}
+
+#nhanchia .border:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 8px 18px #ccc;
+
+}
+
+#nhanchia h4{
+
+    margin-bottom:20px;
+
+    font-size:24px;
+
+}
+
+#nhanchia .text-primary{
+
+    color:#1971c2;
+
+}
+
+#nhanchia .text-warning{
+
+    color:#f08c00;
+
+}
+
+#nhanchia input{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    font-size:18px;
+
+}
+
+#nhanchia button{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+#nhanchia .btn-success{
+
+    background:#51cf66;
+
+    color:white;
+
+}
+
+#nhanchia .btn-success:hover{
+
+    background:#37b24d;
+
+}
+
+#nhanchia .btn-warning{
+
+    background:#fcc419;
+
+    color:#333;
+
+}
+
+#nhanchia .btn-warning:hover{
+
+    background:#fab005;
+
+}
+
+#ketQuaNhan,
+#ketQuaChia{
+
+    margin-top:20px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:#e03131;
+
+    text-align:center;
+
+}
