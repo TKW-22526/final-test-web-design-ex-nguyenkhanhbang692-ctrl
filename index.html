@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vui Học Toán Cấp 1</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background-color: #ff6b6b !important;
+        }
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border: none;
+        }
+        .card-header {
+            border-top-left-radius: 15px !important;
+            border-top-right-radius: 15px !important;
+            color: white;
+            font-weight: bold;
+        }
+        .bg-cuuchuong { background-color: #4ecdc4; }
+        .bg-congthuc { background-color: #ff9f43; }
+        .bg-timx { background-color: #a55eea; }
+        .bg-pheptinh { background-color: #10ac84; }
+        .btn-custom {
+            background-color: #ff6b6b;
+            color: white;
+            border-radius: 20px;
+        }
+        .btn-custom:hover {
+            background-color: #ee5253;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold" href="#">Học toán vui 123</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="#cuuchuong">Bảng Cửu Chương</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="#congthuc">Hình Học</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="#timx">Tìm X</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="#pheptinh">Phép Tính 1-100</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="#đonvi">Các đơn vị đo</a></li>
+                
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center text-primary fw-bold mb-5">GÓC HỌC TẬP TOÁN DÀNH CHO HỌC SINH CẤP 1</h1>
+
+       
+        <section id="cuuchuong" class="mb-5">
+            <div class="card">
+                <div class="card-header bg-cuuchuong fs-4">Bảng Cửu Chương Thông Minh</div>
+                <div class="card-body">
+                    <p class="card-text text-muted">Chọn một số để xem bảng cửu chương tương ứng nhé!</p>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                       
+                        <button class="btn btn-outline-secondary fw-bold" onclick="xemCuuChuong(2)">Nhân 2</button>
+                        <button class="btn btn-outline-secondary fw-bold" onclick="xemCuuChuong(3)">Nhân 3</button>
+                        <button class="btn btn-outline-secondary fw-bold" onclick="xemCuuChuong(4)">Nhân 4</button>
+                        <button class="btn btn-outline-secondary fw-bold" onclick="xemCuuChuong(5)">Nhân 5</button>
+                        <button class="btn btn-outline-secondary fw-bold" onclick="xemCuuChuong(6)">Nhân 6</button>
+                        <button class="btn btn-outline-secondary fw-bold" onclick="xemCuuChuong(7)">Nhân 7</button>
+                        <button class="btn btn-outline-secondary fw-bold" onclick="xemCuuChuong(8)">Nhân 8</button>
+                        <button class="btn btn-outline-secondary fw-bold" onclick="xemCuuChuong(9)">Nhân 9</button>
+                    </div>
+                    <div id="ketQuaCuuChuong" class="p-3 bg-light rounded text-center fs-5 fw-semibold border row row-cols-2 row-cols-md-5 g-2" style="display:none;">
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+        <section id="congthuc" class="mb-5">
+            <div class="card">
+                <div class="card-header bg-congthuc fs-4"> Công Thức Tính Chu Vi & Diện Tích</div>
+                <div class="card-body">
+                    <div class="row">
+                      
+                        <div class="col-md-6 mb-3">
+                            <div class="p-3 border rounded bg-light">
+                                <h5 class="text-danger fw-bold">Hình Chữ Nhật</h5>
+                                <p><strong>Chu vi:</strong> P = (a + b)x2  (cùng đơn vị đo)</p>
+                                <p><strong>Diện tích:</strong> S = a x b (cùng đơn vị đo)</p>
+                            </div>
+                        </div>
+                       
+                        <div class="col-md-6 mb-3">
+                            <div class="p-3 border rounded bg-light">
+                                <h5 class="text-success fw-bold">Hình Vuông</h5>
+                                <p><strong>Chu vi:</strong> P = a x 4  (cùng đơn vị đo)</p>
+                                <p><strong>Diện tích:</strong> S = a x a (cùng đơn vị đo) </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="timx" class="mb-5">
+            <div class="card">
+                <div class="card-header bg-timx fs-4">Thử Tài Tìm X</div>
+                <div class="card-body">
+                    <div class="d-flex align-items-center gap-3 justify-content-center flex-wrap">
+                        <span id="deBaiTimX" class="fs-3 fw-bold text-dark"></span>
+                        <input type="number" id="dapAnTimX" class="form-control text-center fs-4" style="width: 120px;" placeholder="X = ?">
+                        <button class="btn btn-custom fs-5 px-4" onclick="kiemTraTimX()">Kiểm tra</button>
+                        <button class="btn btn-secondary fs-5" onclick="taoDeTimX()">Đổi đề</button>
+                    </div>
+                    <div id="phanHoiTimX" class="text-center mt-3 fs-5 fw-bold"></div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="pheptinh" class="mb-5">
+            <div class="card">
+                <div class="card-header bg-pheptinh fs-4"> Luyện Tập Phép Cộng & Trừ (1 - 100)</div>
+                <div class="card-body">
+                    <div class="d-flex align-items-center gap-3 justify-content-center flex-wrap">
+                        <span id="deBaiPhepTinh" class="fs-3 fw-bold text-dark"></span>
+                        <input type="number" id="dapAnPhepTinh" class="form-control text-center fs-4" style="width: 120px;" placeholder="?">
+                        <button class="btn btn-custom fs-5 px-4" onclick="kiemTraPhepTinh()">Kiểm tra</button>
+                        <button class="btn btn-secondary fs-5" onclick="taoDePhepTinh()">Đổi đề</button>
+                    </div>
+                    <div id="phanHoiPhepTinh" class="text-center mt-3 fs-5 fw-bold"></div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    </section>
+
+
+
+
+
+<section id="donvi" class="mb-5">
+
+<div class="card">
+
+
+<div class="card-header bg-primary fs-4">
+
+ Đơn Vị Đo Toán Học
+
+</div>
+
+
+
+<div class="card-body">
+
+
+<div class="row">
+
+<div class="col-md-4 mb-3">
+
+
+<div class="p-3 border rounded bg-light">
+
+
+<h5 class="text-danger fw-bold">
+ Đơn vị đo độ dài
+</h5>
+
+
+<p>
+1 km = 1000 m
+</p>
+
+<p>
+1 m = 10 dm
+</p>
+
+<p>
+1 dm = 10 cm
+</p>
+
+<p>
+1 cm = 10 mm
+</p>
+
+
+</div>
+
+</div>
+<div class="col-md-4 mb-3">
+
+
+<div class="p-3 border rounded bg-light">
+
+
+<h5 class="text-success fw-bold">
+
+ Đơn vị đo diện tích
+
+</h5>
+
+
+<p>
+1 m² = 100 dm²
+</p>
+
+
+<p>
+1 dm² = 100 cm²
+</p>
+
+
+<p>
+1 cm² = 100 mm²
+</p>
+
+
+</div>
+
+</div>
+<div class="col-md-4 mb-3">
+
+
+<div class="p-3 border rounded bg-light">
+
+
+<h5 class="text-warning fw-bold">
+
+Đơn vị đo khối lượng
+
+</h5>
+
+
+<p>
+1 tấn = 1000 kg
+</p>
+
+
+<p>
+1 kg = 1000 g
+</p>
+
+
+<p>
+1 g = 1000 mg
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+    <footer class="text-center py-4 bg-dark text-white-50 mt-5">
+        <p class="mb-0">© 2026 MathKids 123 - Thiết kế cho học sinh Tiểu học cơ bản.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

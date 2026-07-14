@@ -1,0 +1,441 @@
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+font-family:Arial,sans-serif;
+
+}
+
+
+
+body{
+
+background:#f5f9ff;
+
+color:#333;
+
+}
+
+
+
+header{
+
+background:#4dabf7;
+
+color:white;
+
+text-align:center;
+
+padding:40px;
+
+}
+
+
+
+header h1{
+
+font-size:40px;
+
+}
+
+
+
+
+nav{
+
+background:white;
+
+padding:15px;
+
+text-align:center;
+
+}
+
+
+
+nav a{
+
+margin:20px;
+
+text-decoration:none;
+
+color:#1971c2;
+
+font-weight:bold;
+
+}
+
+
+
+
+section{
+
+padding:40px;
+
+text-align:center;
+
+}
+
+
+
+h2{
+
+color:#1971c2;
+
+margin-bottom:25px;
+
+}
+
+
+
+
+
+.cards,
+.tools{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+
+.cards div,
+.tools div,
+.exercise{
+
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+width:300px;
+
+box-shadow:0 5px 15px #ddd;
+
+}
+
+
+
+.cards h3{
+
+color:#ff9800;
+
+}
+
+
+
+
+button{
+
+background:#ffd43b;
+
+border:none;
+
+padding:12px 25px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+margin:10px;
+
+}
+
+
+
+button:hover{
+
+background:#fab005;
+
+}
+
+
+
+
+input,
+select{
+
+
+padding:12px;
+
+border-radius:10px;
+
+border:1px solid #ccc;
+
+}
+
+
+
+
+#question{
+
+font-size:35px;
+
+color:#e03131;
+
+}
+
+
+
+
+#result{
+
+font-size:22px;
+
+margin-top:15px;
+
+}
+
+
+
+
+#clock{
+
+font-size:50px;
+
+color:#e83e8c;
+
+margin:20px;
+
+}
+
+
+
+#table{
+
+margin-top:20px;
+
+line-height:1.8;
+
+font-size:20px;
+
+color:#e8590c;
+
+}
+
+
+
+footer{
+
+background:#343a40;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+}
+/* Căn giữa phần luyện tập */
+
+#baitap{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+}
+
+
+
+.exercise{
+
+    width:450px;
+    max-width:90%;
+
+    text-align:center;
+
+    margin:30px auto;
+
+}
+
+
+
+#question{
+
+    font-size:35px;
+
+    line-height:1.4;
+
+    text-align:center;
+
+}
+
+
+
+#answer{
+
+    width:250px;
+
+    margin:20px auto;
+
+    display:block;
+
+}
+/* =====================
+   PHẦN ĐƠN VỊ ĐO
+===================== */
+
+
+#donvi{
+
+    padding:40px;
+
+}
+
+
+
+#donvi .card{
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px #ddd;
+
+    overflow:hidden;
+
+}
+
+
+
+#donvi .card-header{
+
+    background:#4dabf7;
+
+    color:white;
+
+    padding:20px;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+#donvi .row{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+
+#donvi .col-md-4{
+
+    width:280px;
+
+}
+
+
+
+
+#donvi .p-3{
+
+
+    background:#f8fbff;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 4px 10px #ddd;
+
+    height:100%;
+
+
+}
+
+
+
+#donvi h5{
+
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+/* Màu từng nhóm */
+
+
+#donvi .text-danger{
+
+    color:#e03131;
+
+}
+
+
+
+#donvi .text-success{
+
+    color:#2b8a3e;
+
+}
+
+
+
+#donvi .text-warning{
+
+    color:#f08c00;
+
+}
+
+
+
+
+
+#donvi p{
+
+
+    font-size:18px;
+
+    margin:12px;
+
+    color:#444;
+
+
+}
+
+
+
+#donvi p:hover{
+
+
+    color:#1971c2;
+
+    font-weight:bold;
+
+    transform:scale(1.05);
+
+    transition:0.3s;
+
+
+}
