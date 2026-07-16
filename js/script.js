@@ -29,43 +29,24 @@ function xemCuuChuong(so){
 
 
 let dapAnDungTimX = 0;
-
-
 function taoDeTimX(){
-
 document.getElementById("phanHoiTimX").innerHTML="";
-
 document.getElementById("dapAnTimX").value="";
-
-
 let x=Math.floor(Math.random()*20)+1;
-
 let a=Math.floor(Math.random()*20)+1;
-
-
 let ketqua=x+a;
-
-
 document.getElementById("deBaiTimX").innerHTML=
-
 `X + ${a} = ${ketqua}`;
-
-
 dapAnDungTimX=x;
-
 
 }
 
 
-
 function kiemTraTimX(){
-
 
 let nhap=
 
 parseInt(document.getElementById("dapAnTimX").value);
-
-
 
 if(nhap==dapAnDungTimX){
 
@@ -96,11 +77,7 @@ function taoDePhepTinh(){
 
     let a = Math.floor(Math.random() * 50) + 1;
     let b = Math.floor(Math.random() * 50) + 1;
-
-    // Chọn ngẫu nhiên phép cộng hoặc phép trừ
     let phep = Math.random() < 0.5 ? "+" : "-";
-
-    // Nếu là phép trừ thì đảm bảo không ra số âm
     if(phep == "-"){
 
         if(a < b){
@@ -176,7 +153,7 @@ function tinhChia(){
     if(b==0){
 
         document.getElementById("ketQuaChia").innerHTML =
-        " Không thể chia cho 0";
+        "Không thể chia cho 0";
 
         return;
     }
